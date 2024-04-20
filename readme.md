@@ -28,16 +28,16 @@ It is also accompanied with a professionally designed UI to attract users.
 ![ExpiryTrackerPage](https://github.com/DarrenPea/Dishcover/assets/122805747/1f1b40fa-73a6-4d70-8bb3-630458524c2e)
 
 #### User created recipes
-![User Created Recipe Page](https://github.com/DarrenPea/Dishcover/blob/master/images/UserCreatedRecipe.jpg)
+![UserCreatedRecipe](https://github.com/DarrenPea/Dishcover/assets/122805747/1df30002-e609-4172-a640-d8678def6699)
 
 #### Saved recipes for easy tracking
-![Saved Recipe Page](https://github.com/DarrenPea/Dishcover/blob/master/images/SavedRecipePage.png)
+![SavedRecipePage](https://github.com/DarrenPea/Dishcover/assets/122805747/49c8e5ec-fc41-4fdc-b001-2a9b4723572e)
 
 #### Wallet feature that brings user to FairPrice app once enough points are accumulated for voucher redemption
-![Wallet Page](https://github.com/DarrenPea/Dishcover/blob/master/images/WalletPage.jpg)
+![WalletPage](https://github.com/DarrenPea/Dishcover/assets/122805747/9e98e065-5667-469f-9063-1ccd0a2e7d47)
 
 #### User profile page to edit their details
-![User Profile Page](https://github.com/DarrenPea/Dishcover/blob/master/images/UserProfile.jpg)
+![UserProfile](https://github.com/DarrenPea/Dishcover/assets/122805747/286aa673-e645-429d-ac78-668f4f6f357b)
 
 ### Requirements
 1. Register an account in Spoonacular API to obtain its API key
