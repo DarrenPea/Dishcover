@@ -17,7 +17,8 @@ There are 5 main features implemented in Dishcover, the generation of recipes ba
 It is also accompanied with a professionally designed UI to attract users.
 
 #### UI of Main Page
-![Main Page UI](https://github.com/DarrenPea/Dishcover/blob/master/images/MainPageUI.jpg)
+![MainPageUI](https://github.com/DarrenPea/Dishcover/assets/122805747/78fbea5c-e674-40a8-a684-2d24cfaf3a4e)
+
 
 #### Generation of recipes based on user inputted ingredients
 ![Search Recipe Page](https://github.com/DarrenPea/Dishcover/blob/master/images/SearchRecipePage.png)
