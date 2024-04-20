@@ -17,15 +17,15 @@ There are 5 main features implemented in Dishcover, the generation of recipes ba
 It is also accompanied with a professionally designed UI to attract users.
 
 #### UI of Main Page
-![MainPageUI](https://github.com/DarrenPea/Dishcover/assets/122805747/78fbea5c-e674-40a8-a684-2d24cfaf3a4e = 250x250)
+![MainPageUI](https://github.com/DarrenPea/Dishcover/assets/122805747/78fbea5c-e674-40a8-a684-2d24cfaf3a4e)
 
 
 #### Generation of recipes based on user inputted ingredients
-![Search Recipe Page](https://github.com/DarrenPea/Dishcover/blob/master/images/SearchRecipePage.png)
-![Recipe Details Page](https://github.com/DarrenPea/Dishcover/blob/master/images/RecipeDetailsPage.png)
+![SearchRecipePage](https://github.com/DarrenPea/Dishcover/assets/122805747/7db0c609-ac30-44ab-92ef-b6e84529f330)
+![RecipeDetailsPage](https://github.com/DarrenPea/Dishcover/assets/122805747/ef5bef23-cff2-45ef-811c-af7b9878113b)
 
 #### Expiry date tracking system with timely notifications
-![Expiry Tracker Page](https://github.com/DarrenPea/Dishcover/blob/master/images/ExpiryTrackerPage.jpg)
+![ExpiryTrackerPage](https://github.com/DarrenPea/Dishcover/assets/122805747/1f1b40fa-73a6-4d70-8bb3-630458524c2e)
 
 #### User created recipes
 ![User Created Recipe Page](https://github.com/DarrenPea/Dishcover/blob/master/images/UserCreatedRecipe.jpg)
