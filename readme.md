@@ -16,28 +16,41 @@ Solution: To solve the issue above, our app, Dishcover, is extremely time saving
 There are 5 main features implemented in Dishcover, the generation of recipes based on user's leftover ingredients, expiry date tracking system, creating their own recipes and sharing within the community, saving recipes and a wallet that enables voucher redemption at the supermarket.
 It is also accompanied with a professionally designed UI to attract users.
 
-#### UI of Main Page
-![MainPageUI](https://github.com/DarrenPea/Dishcover/assets/122805747/78fbea5c-e674-40a8-a684-2d24cfaf3a4e)
+<h4 align="center">UI of Main Page</h4>
+<p align="center">
+  <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/MainPageUI.jpg" width="300" />
+</p>
 
+<h4 align="center">Generation of recipes based on user inputted ingredients</h4>
+<p align="center">
+  <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/SearchRecipePage.png" width="300" />
+  <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/RecipeDetailsPage.png" width="300" />
+</p>
 
-#### Generation of recipes based on user inputted ingredients
-![SearchRecipePage](https://github.com/DarrenPea/Dishcover/assets/122805747/7db0c609-ac30-44ab-92ef-b6e84529f330)
-![RecipeDetailsPage](https://github.com/DarrenPea/Dishcover/assets/122805747/ef5bef23-cff2-45ef-811c-af7b9878113b)
+<h4 align="center">Expiry date tracking system with timely notifications</h4>
+<p align="center">
+  <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/ExpiryTrackerPage.jpg" width="300" />
+</p>
 
-#### Expiry date tracking system with timely notifications
-![ExpiryTrackerPage](https://github.com/DarrenPea/Dishcover/assets/122805747/1f1b40fa-73a6-4d70-8bb3-630458524c2e)
+<h4 align="center">User created recipes</h4>
+<p align="center">
+  <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/UserCreatedRecipe.jpg" width="300" />
+</p>
 
-#### User created recipes
-![UserCreatedRecipe](https://github.com/DarrenPea/Dishcover/assets/122805747/1df30002-e609-4172-a640-d8678def6699)
+<h4 align="center">Saved recipes for easy tracking</h4>
+<p align="center">
+  <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/SavedRecipePage.png" width="300" />
+</p>
 
-#### Saved recipes for easy tracking
-![SavedRecipePage](https://github.com/DarrenPea/Dishcover/assets/122805747/49c8e5ec-fc41-4fdc-b001-2a9b4723572e)
+<h4 align="center">Wallet feature that brings user to FairPrice app once enough points are accumulated for voucher redemption</h4>
+<p align="center">
+  <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/WalletPage.jpg" width="300" />
+</p>
 
-#### Wallet feature that brings user to FairPrice app once enough points are accumulated for voucher redemption
-![WalletPage](https://github.com/DarrenPea/Dishcover/assets/122805747/9e98e065-5667-469f-9063-1ccd0a2e7d47)
-
-#### User profile page to edit their details
-![UserProfile](https://github.com/DarrenPea/Dishcover/assets/122805747/286aa673-e645-429d-ac78-668f4f6f357b)
+<h4 align="center">User profile page to edit their details</h4>
+<p align="center">
+  <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/UserProfile.jpg" width="300" />
+</p>
 
 ### Requirements
 1. Register an account in Spoonacular API to obtain its API key
