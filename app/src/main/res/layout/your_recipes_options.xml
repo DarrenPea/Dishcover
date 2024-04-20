@@ -1,0 +1,64 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F0F0F0"
+    app:cardCornerRadius="20dp"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        app:cardCornerRadius="64dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/grey"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_below="@id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit recipe name"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="start"
+        app:drawableLeftCompat="@drawable/edit"
+        app:drawableTint="@color/primary" />
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_below="@id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete recipe"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="32dp"
+        android:textColor="@color/black"
+        android:drawablePadding="16dp"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="start"
+        app:drawableLeftCompat="@drawable/delete_forever"
+        app:drawableTint="@color/primary" />
+
+
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

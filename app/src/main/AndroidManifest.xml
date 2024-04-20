@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/launcher"
+        android:label="Dishcover"
+        android:roundIcon="@mipmap/launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".DishcoverRecipePages.NoodlePage"
+            android:exported="false" />
+        <activity
+            android:name=".UserRecipePages.FavouritesPage"
+            android:exported="false" />
+        <activity
+            android:name=".UserRecipePages.HealthyPage"
+            android:exported="false" />
+        <activity
+            android:name=".DishcoverRecipePages.BiriyaniPage"
+            android:exported="false" />
+        <activity
+            android:name=".DishcoverRecipePages.TomahawkPage"
+            android:exported="false" />
+        <activity
+            android:name=".adapters.RecipesInCollectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SavedRecipes"
+            android:exported="false" />
+        <activity
+            android:name=".barcode.BarcodeMain"
+            android:exported="false" />
+        <activity android:name=".barcode.ProductDetailsActivity" />
+
+        <receiver android:name=".barcode.NotificationReceiver" />
+        <receiver android:name=".barcode.ExpiryNotificationReceiver" />
+
+        <activity
+            android:name=".barcode.CaptureAct"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".UserRecipePages.UserRecipePage"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile.EditName"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile.EditHandle"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile.EditEmail"
+            android:exported="false" />
+        <activity
+            android:name=".editprofile.EditPassword"
+            android:exported="false" />
+        <activity
+            android:name=".YourRecipes"
+            android:exported="false" />
+        <activity
+            android:name=".LoginSplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OnboardFullName"
+            android:exported="true" />
+        <activity
+            android:name=".BottomNavigator"
+            android:exported="true" />
+        <activity
+            android:name=".tes_profile"
+            android:exported="true" />
+        <activity
+            android:name=".test_home"
+            android:exported="true" />
+        <activity
+            android:name=".EditAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfilePage"
+            android:exported="true" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HomePage"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".NewSign"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".NewLogin"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".GetStarted"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".spoonacular_recipes"
+            android:exported="true" />
+        <activity
+            android:name=".recipe_details_activity"
+            android:exported="false" />
+        <activity
+            android:name=".search_recipes"
+            android:exported="false" />
+    </application>
+
+</manifest>

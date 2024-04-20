@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/final_bg_home"
+    >
+
+    <ImageView
+        android:id="@+id/dishcover_logo"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/img" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="216dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="121dp"
+        android:layout_toEndOf="@+id/dishcover_logo"
+        android:background="@drawable/border_glass1"
+        app:iconifiedByDefault="false"
+        app:queryHint="What's in your pantry?" />
+
+    <ImageView
+        android:id="@+id/scanner_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        app:srcCompat="@drawable/border_glass2" />
+
+    <ImageView
+        android:id="@+id/scanner_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/qr_code" />
+
+    <ImageView
+        android:id="@+id/notifications_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/scanner_bg"
+        app:srcCompat="@drawable/border_glass2" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toStartOf="@+id/scanner_bg"
+        app:srcCompat="@drawable/noti" />
+
+
+</RelativeLayout>

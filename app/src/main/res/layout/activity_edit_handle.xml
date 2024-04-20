@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    tools:context=".editprofile.EditHandle">
+
+
+        <RelativeLayout
+            android:id="@+id/titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/go_back"
+                />
+
+
+
+
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_below="@id/titleBar"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dishcover Handle"
+            android:textSize="18sp"
+            android:fontFamily="@font/inter_bold"
+            android:textColor="@color/primary"
+            tools:ignore="HardcodedText"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutFullName"
+            style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:hintEnabled="true"
+            android:focusable="auto"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextHandle"
+                style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Dishcover Handle"
+                android:backgroundTint="@color/white"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/gradient_up"
+                tools:ignore="HardcodedText" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It may take some time, or you may need to restart the app for changes to propagate."
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/inter_regular"
+            android:textColor="@color/grey"
+            tools:ignore="HardcodedText"/>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_gradient"
+        android:fontFamily="@font/gilroy_extrabold"
+        android:gravity="center"
+        android:onClick="saveClicked"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserRecipePages.UserRecipePage">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageLayout"
+        >
+
+        <ImageView
+            android:id="@+id/recipeImage"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:src="@drawable/dum"
+            android:scaleType="centerCrop"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:alpha="0.5"
+            android:background="@color/black">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/navigateBack"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/go_back"
+            android:layout_margin="4dp"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="32dp"
+        android:layout_marginTop="-40dp"
+        android:layout_below="@id/imageLayout">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/topPanel"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recipeName"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="12dp"
+                    android:text="Chicken Dum"
+                    android:textSize="28sp"
+                    android:fontFamily="@font/inter_black"
+                    android:textColor="@color/black"
+                    tools:ignore="HardcodedText"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/text"
+                        android:text="Submitted by"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/inter_light"
+                        tools:ignore="HardcodedText"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/userName"
+                        android:layout_marginStart="4dp"
+                        android:text="The Dishcover Team"
+                        android:textColor="@color/primary"
+                        android:fontFamily="@font/inter_light"
+                        android:textSize="16sp"
+                        tools:ignore="HardcodedText"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/fragmentlayoutholder"
+                android:layout_below="@id/topPanel"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <FrameLayout
+                    android:id="@+id/fragmentContainer"
+                    android:layout_width="match_parent"
+                    android:layout_margin="16dp"
+                    android:layout_height="wrap_content">
+
+                    <ScrollView
+                        android:id="@+id/scrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadeScrollbars="true"
+                        android:scrollbarThumbVertical="@drawable/scrollbar"
+                        >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Ingredients"
+                                android:textSize="16sp"
+
+                                android:fontFamily="@font/inter_extrabold"
+                                android:textColor="@color/primary"
+                                tools:ignore="HardcodedText"/>
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_marginTop="16dp"
+                                android:layout_below="@id/textView2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/inter_regular"
+                                android:text="To make the chicken 650 grams bone-in chicken (about 5 drumsticks) Ezoic 3⁄4 cups plain full fat yogurt (room temp if possible) 1 cup onion thinly sliced (130g) 3 green chilies 1 tablespoon ghee Ezoic 1⁄2 tablespoon cooking oil 1 tomato diced (125g) 1 tablespoon ginger garlic paste 1 tablespoon Biryani masala powder 1 teaspoon Kashmiri red chili powder 1 teaspoon cayenne powder/red chili powder 1⁄4 teaspoon turmeric powder 1⁄3 cup cilantro chopped 1⁄4 cup mint chopped 1⁄2 teaspoon lime juice ((optional)) 1⁄4 cup water For the rice 1 1⁄2 cup Basmati Rice 1 teaspoon ghee 1⁄4 teaspoon cumin seeds 3 cardomom 3 cloves 1 cinnamon stick 2 bay leaf 2.5 liters water (approximately) salt (a lot) (refer notes above)"/>
+
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/textView"
+                                android:layout_marginTop="16dp"
+                                android:text="Recipe Instructions"
+                                android:textSize="16sp"
+
+                                android:fontFamily="@font/inter_extrabold"
+                                android:textColor="@color/primary"
+                                tools:ignore="HardcodedText"/>
+
+                            <TextView
+                                android:id="@+id/textView4"
+                                android:layout_marginTop="16dp"
+                                android:layout_below="@id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/inter_regular"
+                                android:text="Get a wide pot and add ghee and oil to heat up. Add your thinly sliced onion and fry them until they are brown, on medium heat. Mix time to time to ensure even frying. Do not wait until the onions burn which can make the curry bitter. When onions are brown, add ginger garlic paste and mix well together. Lower the heat and cover if it splatters. Fry until the raw smell goes away. Now add your diced tomatoes. Mix well together. Cook the tomatoes until they're very mushy. Use the back of the spoon to mash them a little bit. To that, add biryani masala powder, Kashmiri red chili powder, cayenne powder, turmeric powder, salt, and green chilies broken into big pieces. Toast the spices with onions for about a minute in low heat. Now add the chicken pieces and mix well together. Let the chicken pieces sear a bit. Turn off the heat and add your yogurt. Make sure to beat the yogurt with a spoon to break the lumps and to make it smooth. Mix well with the chicken, turn on the heat to medium-low and add 1/4 cup of water and mix. Cover it and cook it until the oil separates from the curry. (While the chicken is cooking, you can also start washing and soaking the rice. Check the instructions on the next section) When the oil has separated in the curry, add cilantro, and mint leaves. Mix and cook for another few minutes. After a few minutes, taste the gravy and see if it has enough salt. Adjust salt if needed. Cover again and cook on medium-low heat until there's very little gravy left. (about 1/4 cup) When the curry is done, turn off the heat and add 1/2 tsp of lime juice and mix well. If the curry is already sour enough for you with the yogurt then you can skip adding lime. Making rice Meanwhile, you make the chicken, wash your Basmati rice thoroughly until the water runs clear. Then soak the rice in water for about 15mins. Heat about 2.5l of water in a large pot. To that add cumin seeds, cloves, cardamom, cinnamon, bay leaves, ghee, and salt. Taste the water. It should taste pretty salty. Otherwise, your rice will end up bland. Let the water come to boil. Add the rice and cook it until they're almost done (about 90%). To test that take a few rice grains out and taste. The rice grains have to be cooked all the way through but they have to be firm when you bite. When the rice is 90% done, immediately drain the rice using a colander. Spread the rice in the colander so the steam can escape and it would slow down further cooking."/>
+
+                        </RelativeLayout>
+
+                    </ScrollView>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

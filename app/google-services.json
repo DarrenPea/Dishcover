@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "130134860742",
+    "project_id": "dishcover-9652c",
+    "storage_bucket": "dishcover-9652c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:130134860742:android:6a443f1197101377b808c7",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrySXJBnopsAh__6W8q2I0-QsHsS13jZA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

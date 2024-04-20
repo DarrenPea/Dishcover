@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="get_started">Get Started!</string>
+    <string name="diverse_different_discover">Diverse. Different. Discover.</string>
+    <string name="unlock_endless_culinary_inspiration_from_a_community_of_passionate_home_chefs_worldwide">Unlock endless culinary inspiration from passionate home chefs worldwide!</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="show_password">Show Password</string>
+
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+        <item>Prefer not to say</item>
+    </string-array>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="dishcover">Dishcover</string>
+    <string name="welcome_text">Welcome, %s</string>
+    <string name="screen1">Recipe Generation</string>
+    <string name="screen1desc">Input your ingredients and uncover recipes tailored to your kitchen. Transform pantry staples into delightful dishes.</string>
+    <string name="screen2">Community recipes</string>
+    <string name="screen3">Rewards system</string>
+    <string name="screen4">Expiry checker</string>
+    <string name="screen2desc">Join a culinary community. Share your recipes, get feedback, and explore a world of homemade goodness.</string>
+    <string name="screen3desc">Earn rewards for your culinary contributions. Share recipes, gain points, and redeem exciting rewards.</string>
+    <string name="screen4desc">Never let food go to waste. Stay updated on product expiry dates and minimize food wastage effortlessly.</string>
+    <string name="gender_prompt">Select your gender</string>
+    <string name="title_activity_testbot">testbot</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="home">Home</string>
+    <string name="wallet">Wallet</string>
+    <string name="saved">Saved</string>
+    <string name="account">Account</string>
+    <string name="create">Create</string>
+    <string name="settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dish_name">Dish Name</string>
+    <string name="reviews">4 Reviews</string>
+    <string name="likes">8 Likes</string>
+    <string name="personalize_your_dishcover_journey">Personalize your Dishcover journey!</string>
+    <string name="finish_setting_up">Finish setting up</string>
+    <string name="api_key">89defcceda584a9d83f8f47618511581</string>
+    <string name="channel_name">Product Expiry Notifications</string>
+    <string name="channel_description">Notifications for product expiry reminders</string>
+
+</resources>

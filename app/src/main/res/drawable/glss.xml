@@ -1,0 +1,6 @@
+<!-- glass_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#10FFFFFF" /> <!-- Adjust the opacity as needed -->
+    <corners android:radius="16dp" /> <!-- Adjust the corner radius as needed -->
+</shape>

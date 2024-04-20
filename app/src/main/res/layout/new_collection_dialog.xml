@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Collection Name"
+        android:fontFamily="@font/inter_bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/newCollectionNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Name your collection"
+            android:textColor="@color/primary"
+            android:inputType="textCapWords"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Cancel" />
+
+        <TextView
+            android:id="@+id/saveNewCollectionButton"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_semibold"
+            android:text="Save" />
+
+    </RelativeLayout>
+</LinearLayout>

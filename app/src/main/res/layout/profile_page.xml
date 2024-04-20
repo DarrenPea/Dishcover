@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    android:background="#F0F0F0">
+
+
+    <TextView
+        android:id="@+id/profile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:fontFamily="@font/inter_bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        tools:ignore="HardcodedText" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        android:background="@drawable/profile_box"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="1dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/account_circle" />
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/activity_horizontal_margin">
+
+
+            <TextView
+                android:id="@+id/full_name"
+                android:elevation="20dp"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/display_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Display Name"
+                android:fontFamily="@font/inter_light"
+                android:textSize="11sp"
+                android:textColor="@color/text"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/edit_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_button24px"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/profile_box_white"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- FrameLayout to overlay icon on circular background -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <!-- Circular background -->
+                <ImageView
+                    android:id="@+id/icon_background"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/icon_round_bg"/>
+
+                <!-- Icon inside the circular background -->
+                <ImageView
+                    android:id="@+id/icon_profile"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_icon_new"/>
+
+            </FrameLayout>
+
+            <!-- TextViews for Account Details -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Details"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make changes to your account"
+                    android:fontFamily="@font/inter_light"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <!-- ImageView for Account Details -->
+            <ImageView
+                android:id="@+id/extra_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/navigate_next"/>
+
+        </LinearLayout>
+
+        <!-- Section for Reviews -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"> <!-- Add margin top for spacing -->
+
+            <!-- FrameLayout to overlay icon on circular background -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <!-- Circular background -->
+                <ImageView
+                    android:id="@+id/icon_background_reviews"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/icon_round_bg"/>
+
+                <!-- Icon inside the circular background -->
+                <ImageView
+                    android:id="@+id/icon_reviews"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/reviews_primary"/>
+
+            </FrameLayout>
+
+            <!-- TextViews for Reviews -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Your Reviews"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView2_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View and manage your reviews"
+                    android:fontFamily="@font/inter_light"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <!-- ImageView for Reviews -->
+            <ImageView
+                android:id="@+id/extra_icon_reviews"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/navigate_next"/>
+
+        </LinearLayout>
+
+        <!-- Section for Bookmarked Reviews -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"> <!-- Add margin top for spacing -->
+
+            <!-- FrameLayout to overlay icon on circular background -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <!-- Circular background -->
+                <ImageView
+                    android:id="@+id/icon_background_bookmarked_reviews"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/icon_round_bg"/>
+
+                <!-- Icon inside the circular background -->
+                <ImageView
+                    android:id="@+id/icon_bookmarked_reviews"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bookmarks_primary"/>
+
+            </FrameLayout>
+
+            <!-- TextViews for Bookmarked Reviews -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1_bookmarked_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bookmarked Reviews"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView2_bookmarked_reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View and manage your bookmarked reviews"
+                    android:fontFamily="@font/inter_light"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <!-- ImageView for Bookmarked Reviews -->
+            <ImageView
+                android:id="@+id/extra_icon_bookmarked_reviews"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/navigate_next"/>
+
+        </LinearLayout>
+
+        <!-- Section for Logout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"> <!-- Add margin top for spacing -->
+
+            <!-- FrameLayout to overlay icon on circular background -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <!-- Circular background -->
+                <ImageView
+                    android:id="@+id/icon_background_logout"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/icon_round_bg"/>
+
+                <!-- Icon inside the circular background -->
+                <ImageView
+                    android:id="@+id/icon_logout"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/log_out"/>
+
+            </FrameLayout>
+
+            <!-- TextViews for Logout -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView2_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click here to logout from your account"
+                    android:fontFamily="@font/inter_light"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <!-- ImageView for Logout -->
+            <ImageView
+                android:id="@+id/extra_icon_logout"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/navigate_next"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <!-- Third Box -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/profile_box_white"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- FrameLayout to overlay icon on circular background -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <!-- Circular background -->
+                <ImageView
+                    android:id="@+id/icon_background_help"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/icon_round_bg"/>
+
+                <!-- Icon inside the circular background -->
+                <ImageView
+                    android:id="@+id/icon_help"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/help_heart"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView1_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HelpCenter and Feedback"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@android:color/black"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView2_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Got any concerns? Contact us here!"
+                    android:fontFamily="@font/inter_light"
+                    android:textSize="11sp"
+                    android:textColor="@android:color/darker_gray"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/extra_icon_help"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical|end"
+                android:src="@drawable/navigate_next"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dishcover"
+            android:fontFamily="@font/oldstandardtt_bold"
+            android:textColor="@color/primary"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

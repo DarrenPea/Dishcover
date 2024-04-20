@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <!-- Logo View -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="200dp"
+            android:src="@drawable/logo" />
+
+        <!-- Brand Name TextView -->
+        <TextView
+            android:id="@+id/brandNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logoImageView"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/oldstandardtt_bold"
+            android:text="Dishcover"
+            android:textColor="@color/primary"
+            android:textSize="54sp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/brandNameTextView"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/primary"
+            android:indeterminateTint="@color/primary"
+            android:indeterminate="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

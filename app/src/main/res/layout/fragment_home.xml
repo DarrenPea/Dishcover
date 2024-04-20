@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/top"
+                >
+
+                <ImageView
+                    android:id="@+id/logo_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="4dp"
+                    app:srcCompat="@drawable/border_glass2" />
+
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:id="@+id/dishcover_logo"
+                    android:src="@drawable/logo"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="8dp"/>
+
+                <androidx.appcompat.widget.SearchView
+                    android:id="@+id/searchView"
+                    android:layout_width="260dp"
+                    android:layout_height="36dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="70dp"
+                    android:background="@drawable/border_glass1"
+                    android:focusable="auto"
+                    app:searchIcon="@drawable/searchnew"
+                    app:queryHint="What's in your pantry?" />
+
+                <ImageView
+                    android:id="@+id/scanner_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="8dp"
+                    app:srcCompat="@drawable/border_glass2" />
+
+                <ImageView
+                    android:id="@+id/scanner_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="15dp"
+                    app:srcCompat="@drawable/grocery" />
+
+
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dishcover_logo"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/inter_black"
+                    android:text="Hi"
+                    android:textColor="@color/bg"
+                    android:textSize="24sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/display_name_placeholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dishcover_logo"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@+id/textView2"
+                    android:fontFamily="@font/inter_black"
+                    android:text="full_name!"
+                    android:textColor="@color/bg"
+                    android:textSize="24sp"
+                    tools:ignore="HardcodedText" />
+
+                <RelativeLayout
+                    android:layout_below="@+id/display_name_placeholder"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <HorizontalScrollView
+                        android:id="@+id/horizontalScrollView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="12dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/border_button"
+                                    android:scaleType="fitCenter" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:fontFamily="@font/inter_semibold"
+                                    android:text="Vegetarian"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="12dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/border_button"
+                                    android:scaleType="fitCenter" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:fontFamily="@font/inter_semibold"
+                                    android:text="Halal"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="12dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/border_button"
+                                    android:scaleType="fitCenter" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:fontFamily="@font/inter_semibold"
+                                    android:text="Chinese"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="12dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/border_button"
+                                    android:scaleType="fitCenter" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:fontFamily="@font/inter_semibold"
+                                    android:text="Western"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginEnd="12dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/border_button"
+                                    android:scaleType="fitCenter" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:fontFamily="@font/inter_semibold"
+                                    android:text="Pizza"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top"
+                android:id="@+id/essentials"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:drawablePadding="16dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Dishcover\'s Essentials"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:drawableRightCompat="@drawable/open_recycle"
+                    tools:ignore="HardcodedText" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView8"
+                    android:layout_marginTop="16dp"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:id="@+id/FeaturedRecipes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/tomahawkCard"
+                            android:layout_width="200dp"
+                            android:layout_height="120dp"
+                            android:layout_marginEnd="24dp"
+                            app:cardCornerRadius="12dp"
+                            android:layout_marginStart="8dp"
+                            app:cardElevation="8dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/tomahawk" />
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:drawablePadding="16dp"
+                                android:layout_marginStart="8dp"
+                                android:fontFamily="@font/inter_bold"
+                                android:text="Tomahawk Steak"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                android:layout_marginTop="90dp"
+                                tools:ignore="HardcodedText"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/ramenCard"
+                            android:layout_width="200dp"
+                            android:layout_height="120dp"
+                            android:layout_marginEnd="24dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/noodles" />
+
+                            <TextView
+                                android:id="@+id/textView12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:drawablePadding="16dp"
+                                android:fontFamily="@font/inter_bold"
+                                android:text="Mushroom Ramen"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                android:layout_marginTop="90dp"
+                                android:layout_marginStart="8dp"
+                                tools:ignore="HardcodedText"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/biriyaniCard"
+                            android:layout_width="200dp"
+                            android:layout_height="120dp"
+                            android:layout_marginEnd="24dp"
+                            app:cardCornerRadius="12dp"
+                            app:cardElevation="8dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/dum" />
+
+                            <TextView
+                                android:id="@+id/textView13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:drawablePadding="16dp"
+                                android:fontFamily="@font/inter_bold"
+                                android:text="Chicken Dum"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                android:layout_marginTop="90dp"
+                                android:layout_marginStart="8dp"
+                                tools:ignore="HardcodedText"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/trending"
+                android:layout_below="@+id/essentials"
+                android:layout_marginTop="16dp"
+                >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:drawablePadding="16dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Community Favourites"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:drawableRightCompat="@drawable/open_recycle2"
+                    tools:ignore="HardcodedText" />
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/communityRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView9"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/healthy"
+            android:layout_below="@+id/trending"
+            android:layout_marginTop="16dp"
+            >
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:drawablePadding="16dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/inter_bold"
+                android:text="Healthy Eats"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:drawableRightCompat="@drawable/open_recycle2"
+                tools:ignore="HardcodedText" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/healthyRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView10"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/primary"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="200dp"
+        android:progressDrawable="@drawable/circular_progress_bar"
+        />
+
+</FrameLayout>
