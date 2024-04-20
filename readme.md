@@ -16,38 +16,38 @@ Solution: To solve the issue above, our app, Dishcover, is extremely time saving
 There are 5 main features implemented in Dishcover, the generation of recipes based on user's leftover ingredients, expiry date tracking system, creating their own recipes and sharing within the community, saving recipes and a wallet that enables voucher redemption at the supermarket.
 It is also accompanied with a professionally designed UI to attract users.
 
-<h4 align="center">UI of Main Page</h4>
+<h2 align="center">UI of Main Page</h2>
 <p align="center">
   <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/MainPageUI.jpg" width="300" />
 </p>
 
-<h4 align="center">Generation of recipes based on user inputted ingredients</h4>
+<h2 align="center">Generation of recipes based on user inputted ingredients</h2>
 <p align="center">
   <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/SearchRecipePage.png" width="300" />
   <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/RecipeDetailsPage.png" width="300" />
 </p>
 
-<h4 align="center">Expiry date tracking system with timely notifications</h4>
+<h2 align="center">Expiry date tracking system with timely notifications</h2>
 <p align="center">
   <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/ExpiryTrackerPage.jpg" width="300" />
 </p>
 
-<h4 align="center">User created recipes</h4>
+<h2 align="center">User created recipes</h2>
 <p align="center">
   <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/UserCreatedRecipe.jpg" width="300" />
 </p>
 
-<h4 align="center">Saved recipes for easy tracking</h4>
+<h2 align="center">Saved recipes for easy tracking</h2>
 <p align="center">
   <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/SavedRecipePage.png" width="300" />
 </p>
 
-<h4 align="center">Wallet feature that brings user to FairPrice app once enough points are accumulated for voucher redemption</h4>
+<h2 align="center">Wallet feature that brings user to FairPrice app once enough points are accumulated for voucher redemption</h2>
 <p align="center">
   <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/WalletPage.jpg" width="300" />
 </p>
 
-<h4 align="center">User profile page to edit their details</h4>
+<h2 align="center">User profile page to edit their details</h2>
 <p align="center">
   <img src="https://github.com/DarrenPea/Dishcover/blob/main/images/UserProfile.jpg" width="300" />
 </p>
